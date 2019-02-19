@@ -15,3 +15,5 @@ Editted the two files for articles and user schemas
 Create controllers
 
 Looking at the article.ctrl.js ,we have CRUD functions and helper functions: getArticle, addArticle, getAll, clapArticle, commentArticle.
+
+we create some basic CRUD like get and set for handle User data
