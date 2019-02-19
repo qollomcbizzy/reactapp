@@ -17,3 +17,12 @@ Create controllers
 Looking at the article.ctrl.js ,we have CRUD functions and helper functions: getArticle, addArticle, getAll, clapArticle, commentArticle.
 
 we create some basic CRUD like get and set for handle User data
+
+***Create Routes***
+We are going to create our routes. Run the following commands:
+
+article.js will hold routes for our articles endpoint and user.js will hold routes for our users.
+
+We will create an index route function that will export all routes(routes/article.jsand routes/user.js) in our app.
+
+touch server/routes/index.js
