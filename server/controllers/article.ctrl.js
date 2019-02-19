@@ -7,10 +7,11 @@ module.exports = {
     addArticle:(req,res,next) => {
         let {text,title,claps,description} =req.body
         if(req.files.image) {
-            cloundinary.uploader.upload(req.files.image.path,result()=>{
-                let obj = { text,title,claps,description,feature_img:result.url != null ? result.url : ''}
+            cloundinary.uploader.upload(req.files.image.path, (result) => {
+                let obj = {text,title,claps,description,feature_img:result.url != null ? result.url : ''}
                 saveArticle(obj)
-            },{
+            },
+            {
                 resource_type:'image',
                 eager:[
                     {effect:'sepia'}
